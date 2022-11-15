@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace largest_Number
 {
@@ -18,12 +18,7 @@ namespace largest_Number
                 Console.Write("Enter the thrid number: ");
                 n3 = Convert.ToInt32(Console.ReadLine());
 
-                if (n1 > n2 && n1 > n3)
-                    largest = n1;
-                else if (n2 > n1 && n2 > n3)
-                    largest = n2;
-                else
-                    largest = n3;
+                largest = n1>n2 && n1>n3 ? n1 : n2>n3 ? n2 : n3;
 
                 Console.WriteLine("Among {0}, {1} and {2} the largest number is {3}", n1, n2, n3, largest);
             }
